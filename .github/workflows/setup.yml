@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Criar repositorio
         run: |
-          curl -i -H "Authorization: {{ secrets.MY_TOKEN }}" -d "{\"name\":\"novo_repo\",\"private\":false}" https://api.github.com/user/repos
+          curl -i -H "Authorization: Bearer {{ secrets.MY_TOKEN }}" -d "{\"name\":\"novo_repo\",\"private\":false}" https://api.github.com/user/repos
